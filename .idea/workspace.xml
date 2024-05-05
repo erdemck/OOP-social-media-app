@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f5173add-ebf0-423b-80d5-b6f069a82dc9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/Network.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/UserList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/cards/PostCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/cards/UserCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/ICreatePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/LeftPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/MidPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/PanelFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/RightPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/views/DashboardView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/views/UserView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/users.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/man-1-3d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/man-2-3d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/man-3-3d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/man-avatar-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/man-avatar-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/man-avatar-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/man-avatar-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/man-avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/woman-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/woman-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/woman-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/woman-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/woman.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2feJ3Rd470g54SB9eYDIjCxcH9Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/taciozturk/IdeaProjects/social-media-app/src/main/resources/assets/avatars&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/assets/avatars" />
+      <recent name="$PROJECT_DIR$/src/main/java/me/taciozturk/assets/avatars" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5173add-ebf0-423b-80d5-b6f069a82dc9" name="Changes" comment="" />
+      <created>1714155410554</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714155410554</updated>
+      <workItem from="1714155411537" duration="3889000" />
+      <workItem from="1714219353682" duration="1416000" />
+      <workItem from="1714226536351" duration="4818000" />
+      <workItem from="1714292437467" duration="6184000" />
+      <workItem from="1714308761078" duration="16409000" />
+      <workItem from="1714328743071" duration="1139000" />
+      <workItem from="1714385132902" duration="87000" />
+      <workItem from="1714386671922" duration="202000" />
+      <workItem from="1714394460044" duration="110000" />
+      <workItem from="1714413027601" duration="689000" />
+      <workItem from="1714559946989" duration="3000" />
+      <workItem from="1714559954679" duration="4112000" />
+      <workItem from="1714718162550" duration="388000" />
+      <workItem from="1714730627463" duration="602000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

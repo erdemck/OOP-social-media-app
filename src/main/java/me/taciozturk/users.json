@@ -1,0 +1,115 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Michael Johnson",
+      "email": "Michael.johnson@example.com",
+      "network": [
+        {"id": 2, "connection": "friend"},
+        {"id": 3, "connection": "friend"},
+        {"id": 4, "connection": "relative"},
+        {"id": 5, "connection": "coworker"}
+      ],
+      "groups": ["Chess Club", "Book Lovers"]
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "email": "bob.smith@example.com",
+      "network": [
+        {"id": 1, "connection": "friend"},
+        {"id": 3, "connection": "friend"},
+        {"id": 6, "connection": "friend"},
+        {"id": 7, "connection": "coworker"},
+        {"id": 8, "connection": "coworker"}
+      ],
+      "groups": ["Chess Club"]
+    },
+    {
+      "id": 3,
+      "name": "Damien White",
+      "email": "Damien.white@example.com",
+      "network": [
+        {"id": 1, "connection": "friend"},
+        {"id": 2, "connection": "friend"},
+        {"id": 9, "connection": "friend"},
+        {"id": 10, "connection": "relative"}
+      ],
+      "groups": ["Book Lovers"]
+    },
+    {
+      "id": 4,
+      "name": "Mary Brown",
+      "email": "mary.brown@example.com",
+      "network": [
+        {"id": 5, "connection": "friend"},
+        {"id": 6, "connection": "friend"},
+        {"id": 1, "connection": "relative"},
+        {"id": 11, "connection": "coworker"}
+      ],
+      "groups": ["Hikers Association"]
+    },
+    {
+      "id": 5,
+      "name": "Eve Davis",
+      "email": "eve.davis@example.com",
+      "network": [
+        {"id": 4, "connection": "friend"},
+        {"id": 7, "connection": "friend"},
+        {"id": 1, "connection": "coworker"}
+      ],
+      "groups": ["Chess Club", "Hikers Association"]
+    },
+    {
+      "id": 6,
+      "name": "Anne Moore",
+      "email": "anne.moore@example.com",
+      "network": [
+        {"id": 2, "connection": "friend"},
+        {"id": 4, "connection": "friend"},
+        {"id": 8, "connection": "friend"}
+      ],
+      "groups": ["Book Lovers"]
+    },
+    {
+      "id": 7,
+      "name": "Grace Lee",
+      "email": "grace.lee@example.com",
+      "network": [
+        {"id": 5, "connection": "friend"},
+        {"id": 2, "connection": "coworker"}
+      ],
+      "groups": ["Hikers Association"]
+    },
+    {
+      "id": 8,
+      "name": "Henry Wilson",
+      "email": "henry.wilson@example.com",
+      "network": [
+        {"id": 6, "connection": "friend"},
+        {"id": 2, "connection": "coworker"}
+      ],
+      "groups": []
+    },
+    {
+      "id": 9,
+      "name": "Isla Young",
+      "email": "isla.young@example.com",
+      "network": [
+        {"id": 3, "connection": "friend"},
+        {"id": 10, "connection": "coworker"}
+      ],
+      "groups": ["Book Lovers"]
+    },
+    {
+      "id": 10,
+      "name": "Jack Taylor",
+      "email": "jack.taylor@example.com",
+      "network": [
+        {"id": 3, "connection": "relative"},
+        {"id": 9, "connection": "coworker"}
+      ],
+      "groups": []
+    }
+  ]
+}
