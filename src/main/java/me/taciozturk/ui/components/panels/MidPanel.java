@@ -85,15 +85,18 @@ public class MidPanel extends JPanel implements ICreatePanel {
         scrollPane.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
-        user.getPosts().reversed().forEach(post -> {
-            PostCard postCard = new PostCard(post);
-            postCard.setBorder(BorderFactory.createEmptyBorder(5, 5, 10, 5));
-            posts.add(postCard);
-            JLabel username = new JLabel(user.getName());
-            posts.add(username);
-            posts.add(new JSeparator(SwingConstants.HORIZONTAL));
-            posts.setBackground(Color.WHITE);
-        });
+        if (user.getPosts() != null) {
+            user.getPosts().reversed().forEach(post -> {
+                PostCard postCard = new PostCard(post);
+                postCard.setBorder(BorderFactory.createEmptyBorder(5, 5, 10, 5));
+                posts.add(postCard);
+                JLabel username = new JLabel(user.getName());
+                posts.add(username);
+                posts.add(new JSeparator(SwingConstants.HORIZONTAL));
+                posts.setBackground(Color.WHITE);
+            });
+        }
+
         return scrollPane;
     }
 

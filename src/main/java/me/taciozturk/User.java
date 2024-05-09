@@ -1,5 +1,6 @@
 package me.taciozturk;
 
+import java.security.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,17 +10,15 @@ public class User {
     private int id;
     private String name;
     private String email;
+    private String hashedPassword;
     private ArrayList<User> connections;
     private ArrayList<Group> groups;
     private Boolean searchable;
-    private ImageIcon avatar;
+    private String avatar;
     private ArrayList<String> posts;
 
-    public User(String name) {
-        this.name = name;
-        this.connections = new ArrayList<>();
-        this.groups = new ArrayList<>();
-        this.posts = new ArrayList<>();
+    public User() {
+        
     }
 
     public String getName() {
@@ -70,15 +69,17 @@ public class User {
         this.id = id;
     }
 
+
     public ImageIcon getAvatar() {
-        return avatar;
+        return new ImageIcon(
+                new ImageIcon(avatar)
+                        .getImage()
+                        .getScaledInstance(200, 200 , Image.SCALE_DEFAULT));
     }
 
-    public void setAvatar(String path, int width, int height) {
-        this.avatar = new ImageIcon(
-                new ImageIcon(path)
-                        .getImage()
-                        .getScaledInstance(width, height , Image.SCALE_DEFAULT));
+
+    public void setAvatar(String path) {
+        this.avatar = path;
     }
 
     public void addConnection(User user) {
@@ -95,5 +96,28 @@ public class User {
 
     public void addPost(String post) {
         this.posts.add(post);
+    }
+
+    public void setHashedPassword(String hashedPassword) {
+        this.hashedPassword = hashedPassword;
+    }
+
+
+    public boolean isPasswordValid(String password) throws NoSuchAlgorithmException {
+        MessageDigest md = MessageDigest.getInstance("SHA-256");
+        byte[] hashBytes = md.digest(password.getBytes());
+
+        // Byte dizisini hexadecimal stringe dönüştürme
+        StringBuilder hexString = new StringBuilder();
+        for (byte b : hashBytes) {
+            String hex = Integer.toHexString(0xff & b);
+            if (hex.length() == 1) {
+                hexString.append('0');
+            }
+            hexString.append(hex);
+        }
+
+        String signHashed = hexString.toString();
+        return this.hashedPassword.equals(signHashed);
     }
 }

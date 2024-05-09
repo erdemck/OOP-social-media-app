@@ -1,18 +1,29 @@
 package me.taciozturk.ui;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonParser;
+import com.google.gson.reflect.TypeToken;
+import me.taciozturk.Authentication.Login;
 import me.taciozturk.User;
 import me.taciozturk.UserList;
 import me.taciozturk.ui.views.UserView;
 
 import javax.swing.*;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.lang.reflect.Type;
+import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Application {
     int SCREEN_WIDTH = 1600;
     int SCREEN_HEIGHT = 920;
 
-    public void run() {
-        UserList userList = generateUsers();
+    public void run(User user) throws FileNotFoundException, NoSuchAlgorithmException {
+        UserList userList = generateUsers(user);
         User user1 = userList.getUserById(1);
 
         JFrame frame = new JFrame();
@@ -26,7 +37,27 @@ public class Application {
         frame.setVisible(true);
     }
 
-    private UserList generateUsers() {
+    private UserList generateUsers(User user) throws FileNotFoundException {
+        UserList list = new UserList();
+
+        //Read the json File
+        FileReader reader = new FileReader("/home/erdem/projectoop/social-media-app/src/main/java/me/taciozturk/users.json");
+
+        JsonParser parser = new JsonParser();
+        JsonArray jsonArray = parser.parse(reader).getAsJsonArray();
+
+        // JSON to User Object
+        Gson gson = new Gson();
+        Type userListType = new TypeToken<List<User>>() {}.getType();
+        List<User> users = gson.fromJson(jsonArray, userListType);
+
+        for (User user1 : users) {
+            list.add(user1);
+        }
+
+
+        return list;
+        /*
         UserList userList = new UserList();
 
         User user1 = new User("Michael Johnson");
@@ -97,5 +128,8 @@ public class Application {
         userList.addConnection(user1, user6);
 
         return userList;
+         */
+
+
     }
 }

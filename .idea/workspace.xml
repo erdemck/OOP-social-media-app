@@ -5,42 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5173add-ebf0-423b-80d5-b6f069a82dc9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/Network.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/UserList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/cards/PostCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/cards/UserCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/ICreatePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/LeftPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/MidPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/PanelFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/RightPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/views/DashboardView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/views/UserView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/users.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/man-1-3d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/man-2-3d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/man-3-3d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/man-avatar-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/man-avatar-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/man-avatar-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/man-avatar-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/man-avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/woman-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/woman-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/woman-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/woman-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/avatars/woman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/Authentication/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/Authentication/Register.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/UserBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/cards/PostCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/cards/UserCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/ICreatePanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/LeftPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/MidPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/PanelFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/RightPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/views/DashboardView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/views/UserView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/users.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +41,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -70,31 +55,74 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/taciozturk/IdeaProjects/social-media-app/src/main/resources/assets/avatars&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.me.taciozturk.Authentication.Main.executor": "Debug",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/erdem/Spring Projects/FirstApp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/assets/avatars" />
       <recent name="$PROJECT_DIR$/src/main/java/me/taciozturk/assets/avatars" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/me/taciozturk" />
+      <recent name="$PROJECT_DIR$/src/main/java/me/taciozturk/Authentication" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="me.taciozturk.Main" />
+      <module name="social-media-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.taciozturk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="me.taciozturk.Authentication.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="me.taciozturk.Authentication.Main" />
+      <module name="social-media-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.taciozturk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.me.taciozturk.Authentication.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -126,11 +154,35 @@
       <workItem from="1714559954679" duration="4112000" />
       <workItem from="1714718162550" duration="388000" />
       <workItem from="1714730627463" duration="602000" />
+      <workItem from="1715178123490" duration="2965000" />
+      <workItem from="1715181656058" duration="3966000" />
+      <workItem from="1715187504616" duration="4574000" />
+      <workItem from="1715193954722" duration="2782000" />
+      <workItem from="1715240481170" duration="3917000" />
+      <workItem from="1715244763544" duration="1137000" />
+      <workItem from="1715247005672" duration="287000" />
+      <workItem from="1715249229110" duration="1378000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/me/taciozturk/Authentication/Login.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/MidPanel.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
