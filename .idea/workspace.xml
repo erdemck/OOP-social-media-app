@@ -5,23 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5173add-ebf0-423b-80d5-b6f069a82dc9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/Authentication/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/Authentication/Register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/UserBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/UserFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/social-media-app/me/taciozturk/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/social-media-app/me/taciozturk/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/social-media-app/me/taciozturk/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/social-media-app/me/taciozturk/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/social-media-app/me/taciozturk/UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/social-media-app/me/taciozturk/UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/social-media-app/me/taciozturk/ui/Application$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/social-media-app/me/taciozturk/ui/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/social-media-app/me/taciozturk/ui/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/Authentication/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/Authentication/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/cards/PostCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/cards/UserCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/ICreatePanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/LeftPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/MidPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/PanelFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/RightPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/views/DashboardView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/views/UserView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/UserBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/UserBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/UserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/UserList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/ui/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/taciozturk/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/taciozturk/users.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +53,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
+    "Application.UserFactory.executor": "Run",
     "Application.me.taciozturk.Authentication.Main.executor": "Debug",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
@@ -104,6 +101,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="me.taciozturk.UserFactory" />
+      <module name="social-media-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.taciozturk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="me.taciozturk.Authentication.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.taciozturk.Authentication.Main" />
       <module name="social-media-app" />
@@ -120,6 +130,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.UserFactory" />
         <item itemvalue="Application.me.taciozturk.Authentication.Main" />
       </list>
     </recent_temporary>
@@ -162,6 +173,8 @@
       <workItem from="1715244763544" duration="1137000" />
       <workItem from="1715247005672" duration="287000" />
       <workItem from="1715249229110" duration="1378000" />
+      <workItem from="1715250630808" duration="838000" />
+      <workItem from="1715261615982" duration="8154000" />
     </task>
     <servers />
   </component>
@@ -172,14 +185,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/me/taciozturk/Authentication/Login.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/me/taciozturk/ui/components/panels/MidPanel.java</url>
           <line>87</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/me/taciozturk/ui/Application.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

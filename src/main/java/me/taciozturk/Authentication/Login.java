@@ -5,6 +5,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 import me.taciozturk.User;
+import me.taciozturk.UserList;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -16,20 +17,8 @@ public class Login {
 
     public Login() {}
 
-    public User login(String email, String password) throws NoSuchAlgorithmException, FileNotFoundException {
-        //Read the json File
-        FileReader reader = new FileReader("/home/erdem/projectoop/social-media-app/src/main/java/me/taciozturk/users.json");
-
-        // Parsing Json File
-        JsonParser parser = new JsonParser();
-        JsonArray jsonArray = parser.parse(reader).getAsJsonArray();
-
-        // JSON to User Object
-        Gson gson = new Gson();
-        Type userListType = new TypeToken<List<User>>() {}.getType();
-        List<User> users = gson.fromJson(jsonArray, userListType);
-
-
+    public User login(String email, String password, UserList userList) throws NoSuchAlgorithmException, FileNotFoundException {
+        List<User> users = userList.getAllUsers();
         for (User user : users) {
             if (user.getEmail().equals(email)) {
                 if (user.isPasswordValid(password)) {

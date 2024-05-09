@@ -7,6 +7,7 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class User {
+    private static int counter = 0;
     private int id;
     private String name;
     private String email;
@@ -18,7 +19,10 @@ public class User {
     private ArrayList<String> posts;
 
     public User() {
-        
+        connections = new ArrayList<User>();
+        groups = new ArrayList<Group>();
+        searchable = false;
+        posts = new ArrayList<String>();
     }
 
     public String getName() {
@@ -65,8 +69,9 @@ public class User {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId() {
+        this.id = counter;
+        counter++;
     }
 
 

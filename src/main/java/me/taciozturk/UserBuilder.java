@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class UserBuilder {
 
-    private int id;
+
     private String name;
     private String email;
     private String hashedPassword;
@@ -39,11 +39,6 @@ public class UserBuilder {
         userBuilder.setHashedPassword(signHashed);
 
         return userBuilder;
-    }
-
-    public UserBuilder setId(int id) {
-        this.id = id;
-        return this;
     }
 
     public UserBuilder setName(String name) {
@@ -86,9 +81,7 @@ public class UserBuilder {
         user.setName(name);
         user.setEmail(email);
         user.setHashedPassword(hashedPassword);
-        user.setId(id);
-        user.setConnections(connections);
-        user.setGroups(groups);
+        user.setId();
         user.setSearchable(searchable);
         user.setAvatar(avatar);
         return user;

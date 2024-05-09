@@ -12,7 +12,7 @@ public class UserList {
     }
 
     public void add(User user) {
-        user.setId(this.id);
+        user.setId();
         this.users.add(user);
         id++;
     }
