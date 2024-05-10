@@ -1,6 +1,7 @@
 package me.taciozturk.ui.views;
 
 import me.taciozturk.User;
+import me.taciozturk.UserList;
 import me.taciozturk.ui.components.panels.PanelFactory;
 
 import javax.swing.*;
@@ -8,8 +9,8 @@ import java.awt.*;
 
 public class UserView extends JPanel {
 
-    public UserView(int width, int height, User user) {
-        PanelFactory panelFactory = new PanelFactory(width,height,user);
+    public UserView(int width, int height, User user, UserList userList) {
+        PanelFactory panelFactory = new PanelFactory(width,height,user,userList);
         JPanel leftPanel = panelFactory.create(PanelFactory.PanelType.LEFT);
         JPanel midPanel = panelFactory.create(PanelFactory.PanelType.MID);
         JPanel rightPanel = panelFactory.create(PanelFactory.PanelType.RIGHT);

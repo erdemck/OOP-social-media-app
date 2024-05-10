@@ -1,5 +1,10 @@
 package me.taciozturk;
 
+import com.google.gson.Gson;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
 import java.security.*;
 
 import javax.swing.*;
@@ -12,17 +17,17 @@ public class User {
     private String name;
     private String email;
     private String hashedPassword;
-    private ArrayList<User> connections;
+    private ArrayList<Integer> connections;
     private ArrayList<Group> groups;
     private Boolean searchable;
     private String avatar;
-    private ArrayList<String> posts;
+    private ArrayList<Post> posts;
 
     public User() {
-        connections = new ArrayList<User>();
+        connections = new ArrayList<Integer>();
         groups = new ArrayList<Group>();
         searchable = false;
-        posts = new ArrayList<String>();
+        posts = new ArrayList<Post>();
     }
 
     public String getName() {
@@ -49,11 +54,11 @@ public class User {
         this.searchable = searchable;
     }
 
-    public ArrayList<User> getConnections() {
+    public ArrayList<Integer> getConnections() {
         return connections;
     }
 
-    public void setConnections(ArrayList<User> connections) {
+    public void setConnections(ArrayList<Integer> connections) {
         this.connections = connections;
     }
 
@@ -88,18 +93,19 @@ public class User {
     }
 
     public void addConnection(User user) {
-        this.connections.add(user);
+        this.connections.add(user.getId());
+
     }
 
     public void removeConnection(User user) {
         this.connections.remove(user);
     }
 
-    public ArrayList<String> getPosts() {
+    public ArrayList<Post> getPosts() {
         return posts;
     }
 
-    public void addPost(String post) {
+    public void addPost(Post post) {
         this.posts.add(post);
     }
 
@@ -125,4 +131,6 @@ public class User {
         String signHashed = hexString.toString();
         return this.hashedPassword.equals(signHashed);
     }
+
+
 }

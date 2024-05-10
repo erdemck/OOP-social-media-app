@@ -10,11 +10,11 @@ public class UserBuilder {
     private String name;
     private String email;
     private String hashedPassword;
-    private ArrayList<User> connections;
+    private ArrayList<Integer> connections;
     private ArrayList<Group> groups;
     private Boolean searchable;
     private String avatar;
-    private ArrayList<String> posts;
+    private ArrayList<Post> posts;
 
 
     public static UserBuilder startBuild (String name, String email, String password) throws NoSuchAlgorithmException {
@@ -56,7 +56,7 @@ public class UserBuilder {
         return this;
     }
 
-    public UserBuilder setConnections(ArrayList<User> connections) {
+    public UserBuilder setConnections(ArrayList<Integer> connections) {
         this.connections = connections;
         return this;
     }

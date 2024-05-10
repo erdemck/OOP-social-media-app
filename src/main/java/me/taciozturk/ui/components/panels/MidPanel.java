@@ -1,13 +1,22 @@
 package me.taciozturk.ui.components.panels;
 
+import me.taciozturk.Post;
+import me.taciozturk.Search;
 import me.taciozturk.User;
+import me.taciozturk.UserList;
 import me.taciozturk.ui.components.cards.PostCard;
 
 
 import javax.swing.*;
+import java.util.List;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.util.Date;
 
 
 public class MidPanel extends JPanel implements ICreatePanel {
@@ -15,22 +24,44 @@ public class MidPanel extends JPanel implements ICreatePanel {
     private int width;
     private int height;
     private JScrollPane scrollPane;
+    private UserList userList;
+    private JTextField searchField;
+    private JPanel searchResultPanel;
+    private List<User> searchResults;
 
-    public MidPanel(int _width, int _height, User _user) {
+    public MidPanel(int _width, int _height, User _user, UserList _userList) {
         super();
         this.user = _user;
         this.width = _width;
         this.height = _height;
+        this.userList = _userList;
     }
 
     @Override
-    public MidPanel create(){
-
-
-        BoxLayout boxLayout = new BoxLayout(this,BoxLayout.Y_AXIS);
+    public MidPanel create() {
+        BoxLayout boxLayout = new BoxLayout(this, BoxLayout.Y_AXIS);
         this.setLayout(boxLayout);
         this.setBackground(Color.WHITE);
         this.setPreferredSize(new Dimension(width * 4 / 8, height));
+
+        searchField = new JTextField();
+        searchField.setMaximumSize(new Dimension(Integer.MAX_VALUE, searchField.getPreferredSize().height));
+        searchField.setAlignmentX(Component.LEFT_ALIGNMENT);
+        searchField.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    performSearch();
+                }
+            }
+        });
+
+        this.add(searchField);
+
+        searchResultPanel = new JPanel();
+        searchResultPanel.setLayout(new BoxLayout(searchResultPanel, BoxLayout.Y_AXIS));
+        searchResultPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+        this.add(searchResultPanel);
 
         JPanel writePostPanel = new JPanel();
         writePostPanel.setLayout(new BoxLayout(writePostPanel,BoxLayout.Y_AXIS));
@@ -48,7 +79,8 @@ public class MidPanel extends JPanel implements ICreatePanel {
 
         sendButton.addActionListener(_ -> {
             String postText = postArea.getText();
-            user.addPost(postText);
+            Post post = new Post(postText,user.getId(),new Date());
+            user.addPost(post);
             this.remove(scrollPane);
             scrollPane = drawPosts(user);
             this.add(scrollPane);
@@ -78,6 +110,30 @@ public class MidPanel extends JPanel implements ICreatePanel {
         return this;
     }
 
+    private void performSearch() {
+        String query = searchField.getText().toLowerCase();
+        searchResultPanel.removeAll();
+        searchResults = new Search().search(query, userList);
+
+        for (User resultUser : searchResults) {
+            JLabel usernameLabel = new JLabel(resultUser.getName());
+            JButton viewProfileButton = new JButton("Add Friend");
+
+            viewProfileButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    userList.addConnection(resultUser,user);
+                }
+            });
+
+            searchResultPanel.add(usernameLabel);
+            searchResultPanel.add(viewProfileButton);
+        }
+
+        searchResultPanel.revalidate();
+        searchResultPanel.repaint();
+    }
+
     public JScrollPane drawPosts(User user) {
         JPanel posts = new JPanel();
         posts.setLayout(new BoxLayout(posts, BoxLayout.Y_AXIS));
@@ -85,16 +141,19 @@ public class MidPanel extends JPanel implements ICreatePanel {
         scrollPane.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
-        if (user.getPosts() != null) {
-            user.getPosts().reversed().forEach(post -> {
-                PostCard postCard = new PostCard(post);
-                postCard.setBorder(BorderFactory.createEmptyBorder(5, 5, 10, 5));
-                posts.add(postCard);
-                JLabel username = new JLabel(user.getName());
-                posts.add(username);
-                posts.add(new JSeparator(SwingConstants.HORIZONTAL));
-                posts.setBackground(Color.WHITE);
-            });
+
+        for (User user1 : userList.getAllUsers()){
+            if (user.getPosts() != null && (user.getConnections().contains(user1.getId()) || user.getId() == user1.getId())) {
+                user1.getPosts().forEach(post -> {
+                    PostCard postCard = new PostCard(post.getMessage());
+                    postCard.setBorder(BorderFactory.createEmptyBorder(5, 5, 10, 5));
+                    posts.add(postCard);
+                    JLabel username = new JLabel(user1.getName());
+                    posts.add(username);
+                    posts.add(new JSeparator(SwingConstants.HORIZONTAL));
+                    posts.setBackground(Color.WHITE);
+                });
+            }
         }
 
         return scrollPane;

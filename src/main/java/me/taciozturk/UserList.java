@@ -1,5 +1,10 @@
 package me.taciozturk;
 
+import com.google.gson.Gson;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,12 +40,23 @@ public class UserList {
     }
 
     public void addConnection(User user1, User user2) {
-        getUserById(user1.getId()).addConnection(user2);
-        getUserById(user2.getId()).addConnection(user1);
+        if (user1.getId() != user2.getId() && !user1.getConnections().contains(user2.getId())) {
+            getUserById(user1.getId()).addConnection(user2);
+            getUserById(user2.getId()).addConnection(user1);
+        }
+
     }
 
     public void removeConnection(User user1, User user2) {
         getUserById(user1.getId()).removeConnection(user2);
         getUserById(user2.getId()).removeConnection(user1);
+    }
+
+    public void dbUpdate(){
+        try (Writer writer = new FileWriter("src/main/java/me/taciozturk/users.json")) {
+            new Gson().toJson(this.getAllUsers(), writer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

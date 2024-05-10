@@ -3,6 +3,7 @@ package me.taciozturk;
 import me.taciozturk.Authentication.Register;
 
 import java.security.NoSuchAlgorithmException;
+import java.util.Date;
 
 public class UserFactory {
     public static void main(String[] args) throws NoSuchAlgorithmException {
@@ -30,8 +31,8 @@ public class UserFactory {
                 .setAvatar("src/main/resources/assets/avatars/man-1-3d.jpg")
                 .setSearchable(true)
                 .build();
-
-        user.addPost(user.getName());
+        Post post = new Post(user.getName(),user.getId(),new Date());
+        user.addPost(post);
 
         return user;
     }

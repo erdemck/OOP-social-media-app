@@ -1,6 +1,7 @@
 package me.taciozturk.ui.components.panels;
 
 import me.taciozturk.User;
+import me.taciozturk.UserList;
 import me.taciozturk.ui.components.cards.UserCard;
 
 import javax.swing.*;
@@ -10,13 +11,16 @@ public class RightPanel extends JPanel implements ICreatePanel {
     private User user;
     private int width;
     private int height;
+    UserList userList;
 
 
-    public RightPanel(int _width, int _height, User _user) {
+    public RightPanel(int _width, int _height, User _user, UserList _userList) {
         super();
         this.user = _user;
         this.width = _width;
         this.height = _height;
+        this.userList = _userList;
+
     }
 
     public RightPanel create(){
@@ -36,7 +40,7 @@ public class RightPanel extends JPanel implements ICreatePanel {
         this.add(new JSeparator(SwingConstants.HORIZONTAL));
 
         user.getConnections().forEach(connection -> {
-            UserCard card = new UserCard(connection);
+            UserCard card = new UserCard(userList.getUserById(connection));
             card.setAlignmentX(Component.LEFT_ALIGNMENT);
             this.add(card);
         });

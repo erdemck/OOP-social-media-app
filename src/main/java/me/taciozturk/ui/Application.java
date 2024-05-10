@@ -29,7 +29,7 @@ public class Application {
 
 
         JFrame frame = new JFrame();
-        UserView userView = new UserView(SCREEN_WIDTH, SCREEN_HEIGHT, loginUser);
+        UserView userView = new UserView(SCREEN_WIDTH, SCREEN_HEIGHT, loginUser,userList);
         frame.add(userView);
 
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);

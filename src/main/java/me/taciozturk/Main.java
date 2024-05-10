@@ -18,13 +18,14 @@ import java.util.function.LongFunction;
 public class Main {
     public static void main(String[] args) throws NoSuchAlgorithmException, IOException {
 
+        String filePath = "src/main/java/me/taciozturk/users.json";
 
-        Register register = new Register("src/main/java/me/taciozturk/users.json");
+        Register register = new Register(filePath);
         Login login = new Login();
 
 
 
-        FileReader reader = new FileReader("/home/erdem/projectoop/social-media-app/src/main/java/me/taciozturk/users.json");
+        FileReader reader = new FileReader(filePath);
 
         JsonParser parser = new JsonParser();
         JsonArray jsonArray = parser.parse(reader).getAsJsonArray();
@@ -38,19 +39,23 @@ public class Main {
             userList.add(user);
         }
 
-        for (int i = 0; i < users.size() - 1 ;i++){
-            userList.getUserById(i).addConnection(userList.getUserById(i+1));
-        }
-
-        User loginedUser = login.login("chris@example.com","Chris Rodriguez1",userList);
+        User loginedUser = login.login("emma@example.com","Emma Brown1",userList);
 
         Application app = new Application();
         app.run(userList,loginedUser);
 
 
+        System.out.println(2);
 
 
 
+
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            public void run() {
+                userList.dbUpdate();
+                // Program kapanırken yapılacak işlemler buraya yazılır
+            }
+        });
 
 
     }
